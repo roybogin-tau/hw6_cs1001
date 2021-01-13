@@ -86,7 +86,567 @@
 
 \begin_body
 
+\begin_layout Title
+מבוא מורחב למדעי המחשב - תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Author
+בר צדוק -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+211964515
+\numeric off
+, רועי בוגין -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+209729524
+\end_layout
+
+\begin_layout Paragraph
+שאלה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Subparagraph
+ב.
+\end_layout
+
 \begin_layout Standard
+נטען כי קוד ההאפמן האופטימלי כאשר התדירויות הן ה
+\begin_inset Formula $n$
+\end_inset
+
+ מספרי פיבונאצי הראשונים הוא עץ בו בן אחד הוא עלה עם מספר פיבונאצי ה
+\begin_inset Formula $n$
+\end_inset
+
+, ומצד שמאל יש את העץ שיווצר עבור ה
+\begin_inset Formula $n-1$
+\end_inset
+
+ מספרי הפיבונאצי הראשונים, כאשר עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+ העץ יהיה מספר הפיבונאצי הראשון )הגדרה בצורה רקורסיבית(.
+\end_layout
+
+\begin_layout Standard
+טענה זו נכונה כיוון שאם נסכום את ה
+\begin_inset Formula $k$
+\end_inset
+
+ מסספרי פיבונאצי הראשונים, נקבל מספר שקטן ב
+\begin_inset Formula $1$
+\end_inset
+
+ ממספר פיבונאצי ה
+\begin_inset Formula $k+2$
+\end_inset
+
+, ולכן, בכל שלב הצמתים שיבחרו הן העץ שנוצר לפני )או מספר פיבונאצי הראשון(
+ והמספר פיבונאצי ה
+\begin_inset Formula $k+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subparagraph
+ג.
+\end_layout
+
+\begin_layout Standard
+נטען כי 
+\begin_inset Formula $\left|C\left(a_{s}\right)\right|-\left|C\left(a_{t}\right)\right|=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $s,t\in\left[n\right]$
+\end_inset
+
+.
+ נוכיח זאת באינדוקציה על 
+\begin_inset Formula $k>0$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n=2^{k}$
+\end_inset
+
+ ונתון ש
+\begin_inset Formula $a_{1}<a_{2}<\dots<a_{n}$
+\end_inset
+
+ וכמו כן 
+\begin_inset Formula $a_{n}<2a_{1}$
+\end_inset
+
+.
+ כאשר 
+\begin_inset Formula $k=1$
+\end_inset
+
+, נקודד אחד מהם ל
+\begin_inset Formula $0$
+\end_inset
+
+ ואת השני ל
+\begin_inset Formula $1$
+\end_inset
+
+.
+ ולכן נקבל כי אכן 
+\begin_inset Formula $\left|C\left(a_{1}\right)\right|-\left|C\left(a_{2}\right)\right|=1-1=0$
+\end_inset
+
+ )אלה הם האופציות היחידות לבחירת 
+\begin_inset Formula $s,t$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+אם התנאי מתקיים עבור 
+\begin_inset Formula $k-1$
+\end_inset
+
+, נוכיח כי התנאי מתקיים עבור 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ נשים לב כי בשלב הראשון, נחבר את הקודקודים 
+\begin_inset Formula $a_{1},a_{2}$
+\end_inset
+
+, בשני 
+\begin_inset Formula $a_{3},a_{4}$
+\end_inset
+
+ וכן הלאה עד 
+\begin_inset Formula $a_{n-1},a_{n}$
+\end_inset
+
+, כיוון שעבור כל 
+\begin_inset Formula $j$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $a_{2j+1}+a_{2j+2}>2a_{1}>a_{n}$
+\end_inset
+
+, ולכן הצמתים בעלי הערכים הקטנים ביותר יהיו 
+\begin_inset Formula $a_{2j+3},a_{2j+4}$
+\end_inset
+
+.
+ נראה כי לאחר ביצוע כל שלבים אלו, נקבל 
+\begin_inset Formula $2^{k-1}$
+\end_inset
+
+ קודקודים כאשר תדירות כל קודקוד 
+\begin_inset Formula $j$
+\end_inset
+
+ היא התדירות של 
+\begin_inset Formula $b_{j}=a_{2j-1}+a_{2j}$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $b_{j}=a_{2j-1}+a_{2j}>a_{2j-3}+a_{2j-2}=b_{j-1}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $b_{2^{k-1}}=a_{n-1}+a_{n}<2a_{n}<4a_{1}<2a_{1}+2a_{2}=2b_{1}$
+\end_inset
+
+ ולכן קוד זה עונה על הנחת האינדוקציה, ומתקיים 
+\begin_inset Formula 
+\[
+\left|C\left(a_{s}\right)\right|-\left|C\left(a_{t}\right)\right|=\left(\left|C\left(b_{\left\lceil \frac{s}{2}\right\rceil }\right)\right|+1\right)-\left(\left|C\left(b_{\left\lceil \frac{t}{2}\right\rceil }\right)\right|+1\right)=\left|C\left(b_{\left\lceil \frac{s}{2}\right\rceil }\right)\right|-\left|C\left(b_{\left\lceil \frac{t}{2}\right\rceil }\right)\right|=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן, בפרט, עבור 
+\begin_inset Formula $s=1,t=n$
+\end_inset
+
+, הראנו כי ההפרש 
+\begin_inset Formula $\left|C\left(a_{1}\right)\right|-\left|C\left(a_{n}\right)\right|=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n=2^{k}$
+\end_inset
+
+ ובפרט עבור 
+\begin_inset Formula $n=256$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subparagraph
+ד.
+\end_layout
+
+\begin_layout Standard
+נטען כי 
+\begin_inset Formula $\left|C\left(a_{1}\right)\right|-\left|C\left(a_{n}\right)\right|=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם נבצע את התהליך הרקורסיבי שתואר לעיל, בכל סבב מספר הקודקודים יתחלק ב
+\begin_inset Formula $2$
+\end_inset
+
+, בסבב ה
+\begin_inset Formula $2$
+\end_inset
+
+, כאשר נגיע למספר קודקודים השווה ל
+\begin_inset Formula $75$
+\end_inset
+
+, נסמנם 
+\begin_inset Formula $b_{1},\dots,b_{75}$
+\end_inset
+
+ נשים לב כי 
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ נמצא בעץ 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+ בעומק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $2$
+\end_inset
+
+
+\numeric off
+ ו
+\begin_inset Formula $a_{300}$
+\end_inset
+
+ נמצא בעץ
+\begin_inset Formula $b_{75}$
+\end_inset
+
+ בעומק 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ נחבר תחילה את 
+\begin_inset Formula $b_{1},b_{2}$
+\end_inset
+
+ ולאחר מכן 
+\begin_inset Formula $b_{3},b_{4}$
+\end_inset
+
+ וכן הלאה עד 
+\begin_inset Formula $b_{73},b_{74}$
+\end_inset
+
+ מאותן סיבות כמו בסעיף ג.
+ כאשר נגיע ל
+\begin_inset Formula $b_{75}$
+\end_inset
+
+, הקודקוד בעל התדירות הכי קרובה אליו יהיה הקודקוד 
+\begin_inset Formula $\left(b_{1},b_{2}\right)$
+\end_inset
+
+, ולכן הוא יחובר אליו.
+ ולכן העומק של הקודקוד 
+\begin_inset Formula $b_{75}$
+\end_inset
+
+ יהיה אחד פחות מהעומק של 
+\begin_inset Formula $b_{1}$
+\end_inset
+
+, ולכן 
+\begin_inset Formula $\left|C\left(a_{1}\right)\right|=\left|C\left(b_{2}\right)\right|+2=\left|C\left(b_{1}\right)\right|+1+2=\left|C\left(a_{n}\right)\right|+1$
+\end_inset
+
+, ומכאן נובע כי 
+\begin_inset Formula 
+\[
+\left|C\left(a_{1}\right)\right|-\left|C\left(a_{n}\right)\right|=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+ה.
+\end_layout
+
+\begin_layout Standard
+נטען כי 
+\begin_inset Formula $\left|C\left(a_{1}\right)\right|-\left|C\left(a_{n}\right)\right|=5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב כי הצמתים 
+\begin_inset Formula $a_{1},\dots,a_{16}$
+\end_inset
+
+ מקיימים את המקרה שהוכחנו בג'.
+ ובנוסף, 
+\begin_inset Formula $\sum_{i=1}^{16}a_{i}<16a_{16}<a_{17}$
+\end_inset
+
+.
+ לכן, תחילה יבנה העץ שמכיל את כל הצמתים 
+\begin_inset Formula $a_{1},\dots,a_{16}$
+\end_inset
+
+.
+ לאחר מכן, נסמן 
+\begin_inset Formula $b_{16}$
+\end_inset
+
+ להיות הצומת שמכילה את העץ של
+\begin_inset Formula $\left(a_{1},\dots,a_{16}\right)$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $b_{16}<a_{17}$
+\end_inset
+
+ ולכן צמתים אלה יתחברו לצומת שאותה נסמן 
+\begin_inset Formula $b_{17}$
+\end_inset
+
+.
+ כעת, ידוע כי 
+\begin_inset Formula $a_{n}<2a_{17}<2b_{17}$
+\end_inset
+
+ ובנוסף נראה כי 
+\begin_inset Formula $a_{n}<2a_{17}<2a_{18}$
+\end_inset
+
+ לכן אם נסדר את 
+\begin_inset Formula $b_{17},a_{18},\dots,a_{n}$
+\end_inset
+
+ על פי גדליהם, נקבל 
+\begin_inset Formula $256$
+\end_inset
+
+ צמתים אשר עונים על תנאי סעיף ג'.
+ ולכן לכל צומת יהיה אותו מספר הביטים.
+ כלומר, 
+\begin_inset Formula $\left|C\left(b_{17}\right)\right|-\left|C\left(a_{n}\right)\right|=0$
+\end_inset
+
+ וכיוון ש
+\begin_inset Formula $a_{1}$
+\end_inset
+
+ עלה של
+\begin_inset Formula $b_{17}$
+\end_inset
+
+ בעומק 
+\begin_inset Formula $5$
+\end_inset
+
+ )כיוון שהוא עלה של 
+\begin_inset Formula $b_{16}$
+\end_inset
+
+ בעומק 
+\begin_inset Formula $4$
+\end_inset
+
+ ו
+\begin_inset Formula $b_{16}$
+\end_inset
+
+ נמצא ב
+\begin_inset Formula $b_{17}$
+\end_inset
+
+ בעומק 
+\begin_inset Formula $1$
+\end_inset
+
+(, נקבל כי 
+\begin_inset Formula 
+\[
+\left|C\left(a_{1}\right)\right|-\left|C\left(a_{n}\right)\right|=\left|C\left(b_{17}\right)\right|+5-\left|C\left(a_{n}\right)\right|=5
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סקיצה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename h.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
 
 \end_layout
 

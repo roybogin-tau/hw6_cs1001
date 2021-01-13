@@ -11,7 +11,7 @@
 
 # For example: SUBMISSION_IDS = ["123456", "987654"] if submitted in a pair or SUBMISSION_IDS = ["123456"] if submitted alone.
 
-SUBMISSION_IDS = []
+SUBMISSION_IDS = ["211964515", "209729524"]
 
 
 ############
@@ -20,12 +20,33 @@ SUBMISSION_IDS = []
 
 # (a)
 def take_only(gen, predicate, n):
-    pass  # remove pass add your implementation here
+    count = 0
+    while count < n:
+        try:
+            nxt = next(gen)
+            if predicate(nxt):
+                yield nxt
+                count = 0
+            else:
+                count += 1
+        except StopIteration:
+            break
+
 
 
 # (b)
 def blocks(gen, k):
-    pass  # remove pass add your implementation here
+    while True:
+        try:
+            arr = []
+            for i in range(k):
+                arr.append(next(gen))
+        except StopIteration:
+            break
+        finally:
+            if arr != []:
+                yield arr
+
 
 
 ############
@@ -115,3 +136,4 @@ def test():
         print("Error in CYK_d")
     if CYK_d("baab", rule_dict, "S") != -1:
         print("Error in CYK_d")
+test()

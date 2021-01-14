@@ -63,8 +63,7 @@ def CYK_d(st, rule_dict, start_var):
     # Initialize the relevant triangular region with empty sets
     for i in range(n):
         for j in range(i + 1, n + 1):
-            pass  # Replace this with your implementation
-            # _____________________________________
+            table[i][j] = {}
 
     # Fill the table cells representing substrings of length 1
     fill_length_1_cells_d(table, rule_dict, st)
@@ -77,6 +76,7 @@ def CYK_d(st, rule_dict, start_var):
 
     # Original CYK: return start_var in table[0][n]
     if start_var in table[0][n]:
+        #we will now return a tuple: (rule, depth)
         return table[0][n][start_var]
     return -1
 
@@ -86,8 +86,7 @@ def fill_length_1_cells_d(table, rule_dict, st):
     for i in range(n):
         for lhs in rule_dict:  # lhs is a single variable
             if st[i] in rule_dict[lhs]:
-                pass  # Replace this with your implementation
-                # _____________________________________
+                table[i][i+1][lhs]=1
 
 
 def fill_cell_d(table, i, j, rule_dict):
@@ -97,13 +96,8 @@ def fill_cell_d(table, i, j, rule_dict):
                 if len(rhs) == 2:  # rule like A -> XY (not like A -> a)
                     X, Y = rhs[0], rhs[1]
                     if X in table[i][k] and Y in table[k][j]:
-                        pass  # Replace this with your implementation
-                        # _____________________________________
-                        # _____________________________________
-                        # _____________________________________
-                        # _____________________________________
-                        # _____________________________________
-
+                        table[i][j][lhs]=1+max(table[i][k][X], table[k][j][Y])
+                        
 
 ########
 # Tester

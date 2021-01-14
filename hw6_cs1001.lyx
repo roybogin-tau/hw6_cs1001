@@ -1422,5 +1422,336 @@ T\left(n\right)=\sum_{l=2}^{n}\sum_{i=0}^{n-l+1}C\left(i,i+l\right)=\sum_{l=2}^{
 
 \end_layout
 
+\begin_layout Paragraph
+שאלה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+.
+\end_layout
+
+\begin_layout Subparagraph
+א.
+\end_layout
+
+\begin_layout Standard
+הפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+what
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ממיינת כל עמודה בתמונה לפי בהירות.
+ להלן מימוש שלנו לפונקציה והפלט שהתקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename what.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename tower.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+ב.
+\end_layout
+
+\begin_layout Standard
+התמונה המקורית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename original.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פלט הפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+process_img
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ללא שינוי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename uoside_sown.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פלט הפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+process_img
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם השינוי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename weird.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההסבר לשינוי בפלט הוא שהפונקציה המקורית )ביחד עם פונקציית ה
+\lang english
+lambda
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הנתונה( יוצרת עותק של התמונה ומשקפת אותה ביחס לציר ה-
+\lang english
+x
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן מוחזרת תמונה משוקפת.
+ בפונקציה החדשה, פעולת השיקוף מתבצעת על התמונה עצמה ולא על עותק שלה.
+ לכן, החצי העליון של התמונה משוקף כמו בפונקציה המקורית אך החצי השני משוקף
+ ביחס לתמונה שכבר שוקפה ולכן החצי התחתון של התמונה נראה כמו החצי התחתון
+ של התמונה המקורית.
+\end_layout
+
 \end_body
 \end_document

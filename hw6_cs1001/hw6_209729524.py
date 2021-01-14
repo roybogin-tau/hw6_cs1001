@@ -11,7 +11,7 @@
 
 # For example: SUBMISSION_IDS = ["123456", "987654"] if submitted in a pair or SUBMISSION_IDS = ["123456"] if submitted alone.
 
-SUBMISSION_IDS = ["211964515", "209729524"]
+SUBMISSION_IDS = ["209729524", "211964515"]
 
 
 ############
@@ -96,7 +96,10 @@ def fill_cell_d(table, i, j, rule_dict):
                 if len(rhs) == 2:  # rule like A -> XY (not like A -> a)
                     X, Y = rhs[0], rhs[1]
                     if X in table[i][k] and Y in table[k][j]:
-                        table[i][j][lhs]=1+max(table[i][k][X], table[k][j][Y])
+                        if lhs in table[i][j]:
+                            table[i][j][lhs] = min(table[i][j][lhs], 1 + max(table[i][k][X], table[k][j][Y]))
+                        else:
+                            table[i][j][lhs] = 1+max(table[i][k][X], table[k][j][Y])
                         
 
 ########
@@ -130,4 +133,3 @@ def test():
         print("Error in CYK_d")
     if CYK_d("baab", rule_dict, "S") != -1:
         print("Error in CYK_d")
-test()

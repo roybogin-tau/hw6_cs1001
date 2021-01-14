@@ -118,36 +118,7 @@
 \end_layout
 
 \begin_layout Author
-בר צדוק -
-\family roman
-\series medium
-\shape up
-\size large
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-211964515
-\numeric off
-, רועי בוגין -
+רועי בוגין -
 \family roman
 \series medium
 \shape up
@@ -175,6 +146,35 @@
 \noun default
 \color inherit
 209729524
+\numeric off
+, בר צדוק -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+211964515
 \end_layout
 
 \begin_layout Paragraph

@@ -133,3 +133,24 @@ def test():
         print("Error in CYK_d")
     if CYK_d("baab", rule_dict, "S") != -1:
         print("Error in CYK_d")
+
+
+############
+# QUESTION 6 - Bonus
+############
+
+
+from PIL import Image  # need to install PIL/PILLOW
+
+
+def what(img):
+    w, h = img.size
+    mat = img.load()
+    new_img = img.copy()
+    new_mat = new_img.load()
+
+    for x in range(w):
+        s = sorted([mat[x, y] for y in range(h)])
+        for y in range(h):
+            new_mat[x, y] = s[y]
+    return new_img
